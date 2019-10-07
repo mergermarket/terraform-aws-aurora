@@ -112,7 +112,7 @@ variable "monitoring_interval" {
 
 variable "auto_minor_version_upgrade" {
   type        = "string"
-  default     = "true"
+  default     = "false"
   description = "Determines whether minor engine upgrades will be performed automatically in the maintenance window"
 }
 
@@ -126,6 +126,12 @@ variable "db_cluster_parameter_group_name" {
   type        = "string"
   default     = "default.aurora5.6"
   description = "The name of a DB Cluster parameter group to use"
+}
+
+variable "deletion_protection" {
+  type        = "string"
+  default     = "true"
+  description = "If the DB instance should have deletion protection enabled. The database can't be deleted when this value is set to true."
 }
 
 variable "snapshot_identifier" {

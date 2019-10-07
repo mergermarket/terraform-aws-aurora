@@ -243,6 +243,7 @@ resource "aws_rds_cluster" "default" {
   storage_encrypted               = "${var.storage_encrypted}"
   apply_immediately               = "${var.apply_immediately}"
   db_cluster_parameter_group_name = "${var.db_cluster_parameter_group_name}"
+  deletion_protection             = "${var.deletion_protection}"
 }
 
 // Geneate an ID when an environment is initialised
