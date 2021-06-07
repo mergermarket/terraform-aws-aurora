@@ -12,3 +12,8 @@ output "all_instance_endpoints_list" {
 output "reader_endpoint" {
   value = "${aws_rds_cluster.default.reader_endpoint}"
 }
+
+// Cluster ARN - can use when defining centralised backup
+output "cluster_arn" {
+  value = "${aws_rds_cluster.default.arn}"
+}
