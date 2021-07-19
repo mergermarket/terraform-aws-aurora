@@ -17,3 +17,8 @@ output "reader_endpoint" {
 output "cluster_arn" {
   value = "${aws_rds_cluster.default.arn}"
 }
+
+// Cluster ID - useful to any resources requiring cluster's ID, e.g. rds_cluster_role_association
+output "cluster_id" {
+  value = "${aws_rds_cluster.default.id}"
+}
