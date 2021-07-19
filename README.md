@@ -212,4 +212,4 @@ resource "aws_rds_cluster_parameter_group" "aurora_cluster_postgres96_parameter_
 | cluster_endpoint | The 'writer' endpoint for the cluster |
 | reader_endpoint | A read-only endpoint for the Aurora cluster, automatically load-balanced across replicas |
 | cluster_arn | ARN of the cluster, useful when defining centralised backup script |
-
+| cluster_id | ID of the cluster, useful to any resources requiring cluster's ID, e.g. rds_cluster_role_association |
